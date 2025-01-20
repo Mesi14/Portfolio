@@ -39,7 +39,7 @@ For the live version of this project please visit the following [link]()
 
 ## Future_Functionalities:
 
-- UI
+- Add more Projects to the My projects section
 
 ## Support
 
