@@ -1,5 +1,5 @@
 html {
-  font-size: 14px;
+  font-size: 16px;
 }
 
 #presentation {
@@ -28,7 +28,7 @@ html {
 }
 
 #hello {
-  background-color: rgba(0,0,0, 0.9); /* Black w/opacity/see-through */
+  background-color: rgba(0,0,0, 0.9); 
   overflow: hidden;
   white-space: nowrap;
   margin: 0 auto;
@@ -41,7 +41,7 @@ html {
   z-index: 5;
   width: 25%;
   padding: 10px;
-  text-align: center;
+  text-align: left;
   animation: 
     typing 3.5s steps(40, end)
 }
@@ -70,5 +70,115 @@ html {
 @keyframes showUp {
   to{
       visibility: visible;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  #presentation {
+    height: 50vh;
+  }
+
+  #logo {
+    top: 2rem;
+    left: 2;
+    position: absolute;
+    width: 10rem;
+    height: 7rem;
+  }
+
+  #me {
+    right: 0rem;
+    bottom: 0rem;
+    width: 6rem;
+    height:  7rem;
+  }
+
+  #hello {
+    overflow: hidden;
+    white-space: nowrap;
+    margin: 0 auto;
+    color: white;
+    font-weight: bold;
+    position: absolute;
+    font-size: small;
+    top: 45%;
+    left: 15%;
+    transform: translate(-32%, -40%);
+    width: 50%;
+    text-align: center;
+    animation: 
+      typing 5.5s steps(40, end)
+  }
+
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 42% }
+  }
+
+  #short-presentation {
+    width: 40%;
+    animation: showUp 0s 7s forwards;
+    left: .93rem;
+  }
+}
+
+@media only screen and (min-width: 375px) and (max-width: 414px) {
+  #presentation {
+    height: 50vh;
+  }
+
+  #logo {
+    top: 2rem;
+    left: 2;
+    position: absolute;
+    width: 12rem;
+    height: 7rem;
+  }
+
+  #me {
+    width: 5rem;
+    height: 6rem;
+    left: 4.5rem;
+  }
+
+  #hello {
+    overflow: hidden;
+    white-space: nowrap;
+    margin: 0 auto;
+    color: white;
+    font-weight: bold;
+    position: absolute;
+    font-size: small;
+    top: 45%;
+    left: 5%;
+    transform: translate(-58%, -40%);
+    width: 50%;
+    text-align: center;
+    animation: 
+      typing 5.5s steps(40, end)
+  }
+
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 43% }
+  }
+
+  #short-presentation {
+    width: 50%;
+    animation: showUp 0s 7s forwards;
+    left: .93rem;
+    top: 13rem;
+  }
+}
+
+@media only screen and (min-width: 414px) and (max-width: 896px) {
+  #presentation {
+    height: 50vh;
+  }
+
+  #hello {
+    width: 50%;
+    top: 40%;
+    left: 25%;
   }
 }
