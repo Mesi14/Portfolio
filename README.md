@@ -22,7 +22,7 @@ For the live version of this project please visit the following [link]()
 ## Get_started
 
 ```bash
-    git clon git@github.com:Mesi14/Portfolio.git
+    git clone git@github.com:Mesi14/Portfolio.git
     cd into the folder by typing: cd Portfolio
     open index.html in the browser
 ```
