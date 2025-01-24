@@ -2,183 +2,62 @@ html {
   font-size: 16px;
 }
 
-#presentation {
-  position: relative;
-  height: 80vh;
-  width: 100%;
-  background-image: url(/Assets/images/main_bckg.jpg);
-  background-size: cover;
-}
-
-#logo {
-  top: 0;
-  left: 1rem;
-  position: absolute;
-  width: 30em;
-  height: 20em;
-}
-
-#me {
-  right: 0rem;
-  bottom: 0rem;
-  position: absolute;
-  width: 30em;
-  height: 35em;
-  z-index: 10;
-}
-
-#hello {
-  background-color: rgba(0,0,0, 0.9); 
-  overflow: hidden;
-  white-space: nowrap;
-  margin: 0 auto;
-  color: white;
-  font-weight: bold;
-  position: absolute;
-  top: 50%;
-  left: 20%;
-  transform: translate(-50%, -50%);
-  z-index: 5;
-  width: 25%;
-  padding: 10px;
-  text-align: left;
-  animation: 
-    typing 3.5s steps(40, end)
-}
-
-@keyframes typing {
-  from { width: 0 }
-  to { width: 30% }
-}
-
-#short-presentation {
-  position: absolute;
-  top: 55%;
-  left: 10%;
-  font-size: small;
-  font-weight: 100;
-  color: #fff;
-  animation: showUp 0s 3s forwards;
-  visibility: hidden;
-}
-
-#short-presentation > a {
-  color: #b99211;
+* {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
   text-decoration: none;
+  color: #fff
 }
 
-@keyframes showUp {
-  to{
-      visibility: visible;
-  }
+body {
+  background-color: #212529;
+  color: #fff;
+}
+
+.short-presentation {
+  font-family: 'Poppins', sans-serif;
+  height: 100vh;
+  align-items: center;
+  justify-content: space-around;
+  padding: 50px;
+  text-align: center;
+}
+
+.short-presentation h1 {
+  color: aquamarine;
+  line-height: 10rem;
+  font-size: 5rem;
+  font-stretch: condensed;
+  margin-bottom: 50px;
+}
+
+.btn-success {
+  width: 80px;
+}
+
+.social {
+  margin-top: 50px;
+  justify-content: space-evenly;
+}
+
+.picture {
+  border: 2px solid #10db4d;
+  border-radius: 50%;
+}
+
+.picture img {
+  border: 4px solid #0b5c23;
 }
 
 @media only screen and (max-width: 375px) {
-  #presentation {
-    height: 50vh;
-  }
-
-  #logo {
-    top: 2rem;
-    left: 2;
-    position: absolute;
-    width: 10rem;
-    height: 7rem;
-  }
-
-  #me {
-    right: 0rem;
-    bottom: 0rem;
-    width: 6rem;
-    height:  7rem;
-  }
-
-  #hello {
-    overflow: hidden;
-    white-space: nowrap;
-    margin: 0 auto;
-    color: white;
-    font-weight: bold;
-    position: absolute;
-    font-size: small;
-    top: 45%;
-    left: 15%;
-    transform: translate(-32%, -40%);
-    width: 50%;
-    text-align: center;
-    animation: 
-      typing 5.5s steps(40, end)
-  }
-
-  @keyframes typing {
-    from { width: 0 }
-    to { width: 42% }
-  }
-
-  #short-presentation {
-    width: 40%;
-    animation: showUp 0s 7s forwards;
-    left: .93rem;
-  }
+  
 }
 
 @media only screen and (min-width: 375px) and (max-width: 414px) {
-  #presentation {
-    height: 50vh;
-  }
 
-  #logo {
-    top: 2rem;
-    left: 2;
-    position: absolute;
-    width: 12rem;
-    height: 7rem;
-  }
-
-  #me {
-    width: 5rem;
-    height: 6rem;
-    left: 4.5rem;
-  }
-
-  #hello {
-    overflow: hidden;
-    white-space: nowrap;
-    margin: 0 auto;
-    color: white;
-    font-weight: bold;
-    position: absolute;
-    font-size: small;
-    top: 45%;
-    left: 5%;
-    transform: translate(-58%, -40%);
-    width: 50%;
-    text-align: center;
-    animation: 
-      typing 5.5s steps(40, end)
-  }
-
-  @keyframes typing {
-    from { width: 0 }
-    to { width: 43% }
-  }
-
-  #short-presentation {
-    width: 50%;
-    animation: showUp 0s 7s forwards;
-    left: .93rem;
-    top: 13rem;
-  }
 }
 
 @media only screen and (min-width: 414px) and (max-width: 896px) {
-  #presentation {
-    height: 50vh;
-  }
-
-  #hello {
-    width: 50%;
-    top: 40%;
-    left: 25%;
-  }
+  
 }
