@@ -13,9 +13,11 @@ This is my personal portfolio page, where you can check out my projects and get 
 
 ## Screenshot
 
-![screenshot]()
+![screenshot](./Assets/images/sample.jpg)
 
 ## Live version
+
+*** to be updated later ***
 
 For the live version of this project please visit the following [link]()
 
