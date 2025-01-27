@@ -21,7 +21,7 @@ body {
   height: 100vh;
   align-items: center;
   justify-content: space-around;
-  padding: 50px;
+  padding: 3.125rem;
   text-align: center;
 }
 
@@ -108,8 +108,8 @@ body {
 }
 
 .btn-info {
-  background-color: rgb(72, 146, 121) !important;
-  border: 1px solid rgb(72, 146, 121);
+  background-color: rgb(72, 146, 121);
+  border: none;
 }
 
 @media only screen and (max-width: 375px) {
